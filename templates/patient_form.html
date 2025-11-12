@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{% if patient %}Edit{% else %}Add{% endif %} Patient</h2>
+<form method="POST">
+    <div class="mb-3"><label>Full Name</label><input type="text" class="form-control" name="fullname" value="{{ patient.fullname if patient else '' }}" required></div>
+    <div class="mb-3"><label>Contact</label><input type="text" class="form-control" name="contact" value="{{ patient.contact if patient else '' }}"></div>
+    <div class="mb-3"><label>Disease</label><input type="text" class="form-control" name="disease" value="{{ patient.disease if patient else '' }}"></div>
+    <div class="mb-3"><label>Next Appointment</label><input type="date" class="form-control" name="next_appointment" value="{{ patient.next_appointment if patient else '' }}"></div>
+    <div class="mb-3"><label>Other Details</label><textarea class="form-control" name="other_details">{{ patient.other_details if patient else '' }}</textarea></div>
+    <button class="btn btn-primary">{% if patient %}Update{% else %}Add{% endif %}</button>
+</form>
+{% endblock %}

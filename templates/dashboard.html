@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">Welcome, {{ current_user.username }}!</h1>
+
+    <div class="row">
+        <!-- Add Patient Card -->
+        <div class="col-md-4 mb-3">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Add Patient</h5>
+                    <p class="card-text">Register a new NCD patient into the system.</p>
+                    <a href="{{ url_for('add_patient') }}" class="btn btn-primary">Add Patient</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Patients Card -->
+        <div class="col-md-4 mb-3">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">View Patients</h5>
+                    <p class="card-text">See the list of patients, search, edit or delete records.</p>
+                    <a href="{{ url_for('patients') }}" class="btn btn-success">View Patients</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointments Card -->
+        <div class="col-md-4 mb-3">
+            <div class="card text-center shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Appointments</h5>
+                    <p class="card-text">Check upcoming appointments and reminders for patients.</p>
+                    <a href="{{ url_for('patients') }}" class="btn btn-warning">View Appointments</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Quick Search -->
+    <div class="mt-4">
+        <h3>Quick Patient Search</h3>
+        <form method="GET" action="{{ url_for('patients') }}">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="search" placeholder="Search by patient name">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

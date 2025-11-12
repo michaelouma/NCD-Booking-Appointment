@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Patients</h2>
+<form method="GET" class="mb-3">
+    <input type="text" name="search" placeholder="Search by name" class="form-control" value="{{ request.args.get('search', '') }}">
+</form>
+<a href="{{ url_for('add_patient') }}" class="btn btn-success mb-3">Add Patient</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Disease</th>
+            <th>Next Appointment</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in patients %}
+        <tr>
+            <td>{{ p.fullname }}</td>
+            <td>{{ p.contact }}</td>
+            <td>{{ p.disease }}</td>
+            <td>{{ p.next_appointment }}</td>
+            <td>
+                <a href="{{ url_for('edit_patient', id=p.id) }}" class="btn btn-warning btn-sm">Edit</a>
+                <form method="POST" action="{{ url_for('delete_patient', id=p.id) }}" style="display:inline;">
+                    <button class="btn btn-danger btn-sm" onclick="return confirm('Delete patient?')">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
