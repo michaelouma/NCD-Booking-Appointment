@@ -198,3 +198,47 @@
 2025-11-18 22:55:51,230 - INFO -  * Debugger PIN: 121-408-113
 2025-11-18 22:56:02,732 - INFO - 127.0.0.1 - - [18/Nov/2025 22:56:02] "GET / HTTP/1.1" 200 -
 2025-11-18 22:56:02,940 - INFO - 127.0.0.1 - - [18/Nov/2025 22:56:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-18 22:58:01,476 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:58:01,480 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:58:01,480 - INFO - Scheduler started
+2025-11-18 22:58:01,558 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 22:58:01,558 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 22:58:01,565 - INFO -  * Restarting with stat
+2025-11-18 22:58:03,570 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:58:03,574 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:58:03,575 - INFO - Scheduler started
+2025-11-18 22:58:03,664 - WARNING -  * Debugger is active!
+2025-11-18 22:58:03,680 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 22:58:05,930 - INFO - 127.0.0.1 - - [18/Nov/2025 22:58:05] "GET / HTTP/1.1" 200 -
+2025-11-18 22:58:07,438 - INFO - 127.0.0.1 - - [18/Nov/2025 22:58:07] "GET / HTTP/1.1" 200 -
+2025-11-18 22:58:07,720 - INFO - 127.0.0.1 - - [18/Nov/2025 22:58:07] "GET / HTTP/1.1" 200 -
+2025-11-18 22:58:07,946 - INFO - 127.0.0.1 - - [18/Nov/2025 22:58:07] "GET / HTTP/1.1" 200 -
+2025-11-18 23:03:51,410 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 23:03:51,658 - INFO -  * Restarting with stat
+2025-11-18 23:03:53,317 - WARNING -  * Debugger is active!
+2025-11-18 23:03:53,325 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 23:04:05,770 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 23:04:05,770 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 23:04:05,774 - INFO -  * Restarting with stat
+2025-11-18 23:04:07,659 - WARNING -  * Debugger is active!
+2025-11-18 23:04:07,675 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 23:04:13,441 - INFO - 127.0.0.1 - - [18/Nov/2025 23:04:13] "GET / HTTP/1.1" 200 -
+2025-11-18 23:04:18,102 - INFO - 127.0.0.1 - - [18/Nov/2025 23:04:18] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:16,552 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 23:09:16,552 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 23:09:16,555 - INFO -  * Restarting with stat
+2025-11-18 23:09:18,533 - WARNING -  * Debugger is active!
+2025-11-18 23:09:18,542 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 23:09:27,203 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:27] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:28,655 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:28] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:28,866 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:28] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:29,024 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:29] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:29,188 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:29] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:29,342 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:29] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:29,598 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:29] "GET / HTTP/1.1" 200 -
+2025-11-18 23:09:30,003 - INFO - 127.0.0.1 - - [18/Nov/2025 23:09:30] "GET / HTTP/1.1" 200 -
+2025-11-18 23:11:58,354 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 23:11:58,517 - INFO -  * Restarting with stat

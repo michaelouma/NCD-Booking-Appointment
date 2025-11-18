@@ -1,12 +1,46 @@
 {% extends 'base.html' %}
+
 {% block content %}
-<h2>{% if patient %}Edit{% else %}Add{% endif %} Patient</h2>
-<form method="POST">
-    <div class="mb-3"><label>Full Name</label><input type="text" class="form-control" name="fullname" value="{{ patient.fullname if patient else '' }}" required></div>
-    <div class="mb-3"><label>Contact</label><input type="text" class="form-control" name="contact" value="{{ patient.contact if patient else '' }}"></div>
-    <div class="mb-3"><label>Disease</label><input type="text" class="form-control" name="disease" value="{{ patient.disease if patient else '' }}"></div>
-    <div class="mb-3"><label>Next Appointment</label><input type="date" class="form-control" name="next_appointment" value="{{ patient.next_appointment if patient else '' }}"></div>
-    <div class="mb-3"><label>Other Details</label><textarea class="form-control" name="other_details">{{ patient.other_details if patient else '' }}</textarea></div>
-    <button class="btn btn-primary">{% if patient %}Update{% else %}Add{% endif %}</button>
-</form>
+<div class="container mt-4" style="max-width: 600px;">
+    <h2 class="mb-4">{% if patient %}Edit{% else %}Add{% endif %} Patient</h2>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+            <div class="alert alert-info">{{ msg }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+        <div class="mb-3">
+            <label for="fullname" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" value="{{ patient.fullname if patient else '' }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="contact" class="form-label">Contact</label>
+            <input type="text" class="form-control" id="contact" name="contact" value="{{ patient.contact if patient else '' }}">
+        </div>
+
+        <div class="mb-3">
+            <label for="disease" class="form-label">Disease</label>
+            <input type="text" class="form-control" id="disease" name="disease" value="{{ patient.disease if patient else '' }}">
+        </div>
+
+        <div class="mb-3">
+            <label for="next_appointment" class="form-label">Next Appointment</label>
+            <input type="date" class="form-control" id="next_appointment" name="next_appointment" value="{{ patient.next_appointment if patient else '' }}">
+        </div>
+
+        <div class="mb-3">
+            <label for="other_details" class="form-label">Other Details</label>
+            <textarea class="form-control" id="other_details" name="other_details">{{ patient.other_details if patient else '' }}</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">{% if patient %}Update{% else %}Add{% endif %}</button>
+    </form>
+</div>
 {% endblock %}
+

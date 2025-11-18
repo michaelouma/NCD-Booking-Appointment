@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
-db = SQLAlchemy()
+db = SQLAlchemy()  # Do NOT pass app here
 
 class Clinician(UserMixin, db.Model):
     __tablename__ = 'clinicians'
@@ -25,4 +25,6 @@ class Patient(db.Model):
     disease = db.Column(db.String(50))
     next_appointment = db.Column(db.Date)
     other_details = db.Column(db.Text)
+
+
 

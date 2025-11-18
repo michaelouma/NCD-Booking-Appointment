@@ -1,40 +1,121 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from flask_login import login_user, logout_user, login_required, current_user
 from models import Clinician, Patient, db
-from utils import send_email_reminder
-from datetime import date, timedelta
 
-routes_blueprint = Blueprint('routes', __name__)
+# Correct blueprint name: 'main'
+main = Blueprint('main', __name__)
 
-# Example: home route
-@routes_blueprint.route('/')
+# Home / Welcome
+@main.route('/')
 def home():
-    return "Welcome to Hospital Appointment System"
+    if current_user.is_authenticated:
+        return redirect(url_for('main.dashboard'))
+    return render_template('welcome.html')
 
-# Clinician login route
-@routes_blueprint.route('/login', methods=['GET', 'POST'])
+# Dashboard
+@main.route('/dashboard')
+@login_required
+def dashboard():
+    return render_template('dashboard.html')
+
+# Register
+@main.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        username = request.form['username']
+        email = request.form['email']
+        password = request.form['password']
+
+        if Clinician.query.filter_by(username=username).first():
+            flash("Username already exists")
+            return redirect(url_for('main.register'))
+
+        user = Clinician(username=username, email=email)
+        user.set_password(password)
+        db.session.add(user)
+        db.session.commit()
+        flash("Registration successful! Please login.")
+        return redirect(url_for('main.login'))
+
+    return render_template('register.html')
+
+# Login
+@main.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        clinician = Clinician.query.filter_by(username=username).first()
-        if clinician and clinician.check_password(password):
-            login_user(clinician)
-            return redirect(url_for('routes.home'))
-        flash('Invalid username or password')
+        user = Clinician.query.filter_by(username=username).first()
+        if user and user.check_password(password):
+            login_user(user)
+            return redirect(url_for('main.dashboard'))
+        else:
+            flash("Invalid username or password")
+            return redirect(url_for('main.login'))
+
     return render_template('login.html')
 
-@routes_blueprint.route('/logout')
+# Logout
+@main.route('/logout')
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('routes.home'))
+    flash("Logged out successfully")
+    return redirect(url_for('main.home'))
 
-# Scheduler function to check tomorrow's appointments
-def check_appointments(app, mail):
-    with app.app_context():
-        tomorrow = date.today() + timedelta(days=1)
-        patients = Patient.query.filter_by(next_appointment=tomorrow).all()
-        for patient in patients:
-            clinician_email = 'clinician@example.com'  # replace with actual clinician email
-            send_email_reminder(patient, clinician_email, mail, app)
+# Patients list
+@main.route('/patients')
+@login_required
+def patients():
+    search = request.args.get('search', '')
+    if search:
+        patients = Patient.query.filter(Patient.fullname.ilike(f'%{search}%')).all()
+    else:
+        patients = Patient.query.all()
+    return render_template('patients.html', patients=patients)
+
+# Add patient
+@main.route('/add_patient', methods=['GET', 'POST'])
+@login_required
+def add_patient():
+    if request.method == 'POST':
+        patient = Patient(
+            fullname=request.form['fullname'],
+            contact=request.form['contact'],
+            disease=request.form['disease'],
+            next_appointment=request.form['next_appointment'],
+            other_details=request.form['other_details']
+        )
+        db.session.add(patient)
+        db.session.commit()
+        flash("Patient added successfully")
+        return redirect(url_for('main.patients'))
+
+    return render_template('patient_form.html', patient=None)
+
+# Edit patient
+@main.route('/edit_patient/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit_patient(id):
+    patient = Patient.query.get_or_404(id)
+    if request.method == 'POST':
+        patient.fullname = request.form['fullname']
+        patient.contact = request.form['contact']
+        patient.disease = request.form['disease']
+        patient.next_appointment = request.form['next_appointment']
+        patient.other_details = request.form['other_details']
+        db.session.commit()
+        flash("Patient updated successfully")
+        return redirect(url_for('main.patients'))
+
+    return render_template('patient_form.html', patient=patient)
+
+# Delete patient
+@main.route('/delete_patient/<int:id>', methods=['POST'])
+@login_required
+def delete_patient(id):
+    patient = Patient.query.get_or_404(id)
+    db.session.delete(patient)
+    db.session.commit()
+    flash("Patient deleted successfully")
+    return redirect(url_for('main.patients'))
