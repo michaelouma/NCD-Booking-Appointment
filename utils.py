@@ -1,6 +1,5 @@
 import logging
 from flask_mail import Message
-from app import mail, app
 
 # Logging setup
 logging.basicConfig(filename='logs/app.log', level=logging.INFO,
@@ -9,8 +8,8 @@ logging.basicConfig(filename='logs/app.log', level=logging.INFO,
 def log_action(action):
     logging.info(action)
 
-# Send email reminder
-def send_email_reminder(patient, clinician_email):
+def send_email_reminder(patient, clinician_email, mail, app):
+    """Send email reminder using Flask-Mail."""
     with app.app_context():
         msg = Message(
             subject=f"Appointment Reminder: {patient.fullname}",

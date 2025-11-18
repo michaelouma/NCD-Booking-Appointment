@@ -1,0 +1,200 @@
+2025-11-18 09:21:06,238 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:21:06,243 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:21:06,244 - INFO - Scheduler started
+2025-11-18 09:21:06,317 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:21:06,318 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 09:21:06,328 - INFO -  * Restarting with stat
+2025-11-18 09:21:08,218 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:21:08,220 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:21:08,222 - INFO - Scheduler started
+2025-11-18 09:21:08,238 - WARNING -  * Debugger is active!
+2025-11-18 09:21:08,246 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 09:22:34,632 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:22:34,634 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:22:34,634 - INFO - Scheduler started
+2025-11-18 09:22:34,661 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:22:34,663 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 09:22:34,666 - INFO -  * Restarting with stat
+2025-11-18 09:22:36,396 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:22:36,399 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:22:36,400 - INFO - Scheduler started
+2025-11-18 09:22:36,423 - WARNING -  * Debugger is active!
+2025-11-18 09:22:36,434 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 09:57:10,633 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:57:10,635 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:57:10,635 - INFO - Scheduler started
+2025-11-18 09:57:10,698 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:57:10,699 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 09:57:10,703 - INFO -  * Restarting with stat
+2025-11-18 09:57:12,398 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:57:12,401 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:57:12,401 - INFO - Scheduler started
+2025-11-18 09:57:12,427 - WARNING -  * Debugger is active!
+2025-11-18 09:57:12,436 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 09:59:04,530 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\routes.py', reloading
+2025-11-18 09:59:04,699 - INFO -  * Restarting with stat
+2025-11-18 09:59:07,046 - WARNING -  * Debugger is active!
+2025-11-18 09:59:07,060 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 09:59:24,942 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 09:59:25,235 - INFO -  * Restarting with stat
+2025-11-18 09:59:27,926 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:59:27,928 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:59:27,929 - INFO - Scheduler started
+2025-11-18 09:59:27,950 - WARNING -  * Debugger is active!
+2025-11-18 09:59:27,961 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 09:59:39,797 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:59:39,799 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:59:39,800 - INFO - Scheduler started
+2025-11-18 09:59:39,829 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 09:59:39,830 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 09:59:39,833 - INFO -  * Restarting with stat
+2025-11-18 09:59:41,318 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 09:59:41,321 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 09:59:41,321 - INFO - Scheduler started
+2025-11-18 09:59:41,337 - WARNING -  * Debugger is active!
+2025-11-18 09:59:41,347 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:01:13,359 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\utils.py', reloading
+2025-11-18 10:01:13,542 - INFO -  * Restarting with stat
+2025-11-18 10:01:16,396 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:01:16,398 - INFO - Added job "check_appointments" to job store "default"
+2025-11-18 10:01:16,399 - INFO - Scheduler started
+2025-11-18 10:01:16,419 - WARNING -  * Debugger is active!
+2025-11-18 10:01:16,428 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:01:30,848 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 10:01:31,003 - INFO -  * Restarting with stat
+2025-11-18 10:04:34,766 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:04:34,768 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:04:34,768 - INFO - Scheduler started
+2025-11-18 10:04:34,797 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 10:04:34,797 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 10:04:34,801 - INFO -  * Restarting with stat
+2025-11-18 10:04:36,477 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:04:36,480 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:04:36,480 - INFO - Scheduler started
+2025-11-18 10:04:36,494 - WARNING -  * Debugger is active!
+2025-11-18 10:04:36,501 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:06:30,944 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 10:06:31,125 - INFO -  * Restarting with stat
+2025-11-18 10:06:32,860 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:06:32,863 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:06:32,863 - INFO - Scheduler started
+2025-11-18 10:06:32,880 - WARNING -  * Debugger is active!
+2025-11-18 10:06:32,888 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:06:47,663 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\utils.py', reloading
+2025-11-18 10:06:47,963 - INFO -  * Restarting with stat
+2025-11-18 10:06:50,206 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:06:50,209 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:06:50,210 - INFO - Scheduler started
+2025-11-18 10:06:50,237 - WARNING -  * Debugger is active!
+2025-11-18 10:06:50,249 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:06:53,895 - WARNING -  * Debugger is active!
+2025-11-18 10:06:53,896 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:07:00,931 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:07:00,935 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:07:00,935 - INFO - Scheduler started
+2025-11-18 10:07:00,989 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 10:07:00,990 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 10:07:00,999 - INFO -  * Restarting with stat
+2025-11-18 10:07:02,751 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:07:02,755 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:07:02,755 - INFO - Scheduler started
+2025-11-18 10:07:02,773 - WARNING -  * Debugger is active!
+2025-11-18 10:07:02,782 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:07:07,867 - WARNING -  * Debugger is active!
+2025-11-18 10:07:07,868 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:07:08,106 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 10:07:08,107 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 10:07:08,107 - INFO -  * Restarting with stat
+2025-11-18 10:07:09,740 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:07:09,743 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:07:09,743 - INFO - Scheduler started
+2025-11-18 10:07:09,762 - WARNING -  * Debugger is active!
+2025-11-18 10:07:09,772 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:07:13,678 - WARNING -  * Debugger is active!
+2025-11-18 10:07:13,678 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:07:29,358 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:07:29,360 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:07:29,360 - INFO - Scheduler started
+2025-11-18 10:07:29,405 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 10:07:29,405 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 10:07:29,410 - INFO -  * Restarting with stat
+2025-11-18 10:07:31,012 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:07:31,015 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:07:31,015 - INFO - Scheduler started
+2025-11-18 10:07:31,035 - WARNING -  * Debugger is active!
+2025-11-18 10:07:31,046 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 10:08:17,381 - INFO - 127.0.0.1 - - [18/Nov/2025 10:08:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-18 10:08:17,996 - INFO - 127.0.0.1 - - [18/Nov/2025 10:08:17] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-18 10:08:18,054 - INFO - 127.0.0.1 - - [18/Nov/2025 10:08:18] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-18 10:08:18,358 - INFO - 127.0.0.1 - - [18/Nov/2025 10:08:18] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-18 10:08:18,484 - INFO - 127.0.0.1 - - [18/Nov/2025 10:08:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-18 10:09:21,014 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 10:09:21,314 - INFO -  * Restarting with stat
+2025-11-18 10:13:41,999 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:13:42,001 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:13:42,001 - INFO - Scheduler started
+2025-11-18 10:14:00,893 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 10:14:00,897 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 10:14:00,897 - INFO - Scheduler started
+2025-11-18 22:34:12,123 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:34:12,125 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:34:12,125 - INFO - Scheduler started
+2025-11-18 22:36:43,811 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:36:43,814 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:36:43,814 - INFO - Scheduler started
+2025-11-18 22:36:43,980 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 22:36:43,982 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 22:36:43,986 - INFO -  * Restarting with stat
+2025-11-18 22:36:45,829 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:36:45,832 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:36:45,832 - INFO - Scheduler started
+2025-11-18 22:36:45,886 - WARNING -  * Debugger is active!
+2025-11-18 22:36:45,898 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 22:38:12,354 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\utils.py', reloading
+2025-11-18 22:38:12,545 - INFO -  * Restarting with stat
+2025-11-18 22:38:15,542 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:38:15,546 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:38:15,547 - INFO - Scheduler started
+2025-11-18 22:38:15,632 - WARNING -  * Debugger is active!
+2025-11-18 22:38:15,646 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 22:38:22,903 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:38:22,906 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:38:22,907 - INFO - Scheduler started
+2025-11-18 22:38:22,972 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 22:38:22,972 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 22:38:22,978 - INFO -  * Restarting with stat
+2025-11-18 22:38:25,093 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:38:25,096 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:38:25,096 - INFO - Scheduler started
+2025-11-18 22:38:25,152 - WARNING -  * Debugger is active!
+2025-11-18 22:38:25,162 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 22:38:59,157 - INFO - 127.0.0.1 - - [18/Nov/2025 22:38:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-18 22:38:59,742 - INFO - 127.0.0.1 - - [18/Nov/2025 22:38:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-18 22:38:59,763 - INFO - 127.0.0.1 - - [18/Nov/2025 22:38:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-18 22:38:59,931 - INFO - 127.0.0.1 - - [18/Nov/2025 22:38:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-11-18 22:41:24,117 - INFO -  * Detected change in 'C:\\Users\\ADMIN\\OneDrive\\Desktop\\BookingAppointment_NCD\\app.py', reloading
+2025-11-18 22:41:24,310 - INFO -  * Restarting with stat
+2025-11-18 22:55:49,067 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:55:49,070 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:55:49,070 - INFO - Scheduler started
+2025-11-18 22:55:49,145 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-18 22:55:49,145 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-18 22:55:49,150 - INFO -  * Restarting with stat
+2025-11-18 22:55:51,159 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-18 22:55:51,161 - INFO - Added job "create_app.<locals>.<lambda>" to job store "default"
+2025-11-18 22:55:51,162 - INFO - Scheduler started
+2025-11-18 22:55:51,220 - WARNING -  * Debugger is active!
+2025-11-18 22:55:51,230 - INFO -  * Debugger PIN: 121-408-113
+2025-11-18 22:56:02,732 - INFO - 127.0.0.1 - - [18/Nov/2025 22:56:02] "GET / HTTP/1.1" 200 -
+2025-11-18 22:56:02,940 - INFO - 127.0.0.1 - - [18/Nov/2025 22:56:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

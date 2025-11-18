@@ -25,3 +25,4 @@ class Patient(db.Model):
     disease = db.Column(db.String(50))
     next_appointment = db.Column(db.Date)
     other_details = db.Column(db.Text)
+
