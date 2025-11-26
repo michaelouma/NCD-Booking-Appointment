@@ -29,39 +29,39 @@ A **web-based hospital appointment management system** for clinicians to manage 
 
 ## Project Structure
 
-BOOKINGAPPOINTMENT_NCD/
-│
-├── __pycache__/                 # Compiled Python cache files
-│
-├── logs/
-│   └── app.log                  # Application log file
-│
-├── ncd/                         # Virtual environment directory (venv)
-│   ├── Include/
-│   ├── Lib/
-│   ├── Scripts/
-│   └── pyvenv.cfg
-│
-├── static/
-│   └── css/
-│       └── style.css            # Custom stylesheet
-│
-├── templates/                   # HTML templates for Flask
-│   ├── base.html                # Base layout shared by all pages
-│   ├── dashboard.html           # Dashboard page
-│   ├── login.html               # Login page
-│   ├── patient_form.html        # Patient registration form
-│   ├── patient_list.html        # Patient list page
-│   ├── register.html            # User registration page
-│   └── welcome.html             # Home/landing page
-│
-├── app.py                       # Main Flask application entry point
-├── config.py                    # Application configuration settings
-├── models.py                    # Database models
-├── routes.py                    # Application route definitions
-├── utils.py                     # Utility/helper functions
-│
-├── requirements.txt             # Python dependencies
+BOOKINGAPPOINTMENT_NCD/ <br>
+│<br>
+├── __pycache__/            # Compiled Python cache files <br>
+│<br>
+├── logs/<br>
+│   └── app.log                  # Application log file<br>
+│<br>
+├── ncd/                         # Virtual environment directory (venv)<br>
+│   ├── Include/<br>
+│   ├── Lib/<br>
+│   ├── Scripts/<br>
+│   └── pyvenv.cfg<br>
+│<br>
+├── static/<br>
+│   └── css/<br>
+│       └── style.css            # Custom stylesheet<br>
+│<br.
+├── templates/                   # HTML templates for Flask<br>
+│   ├── base.html                # Base layout shared by all pages<br>
+│   ├── dashboard.html           # Dashboard page<br>
+│   ├── login.html               # Login page<br>
+│   ├── patient_form.html        # Patient registration form<br>
+│   ├── patient_list.html        # Patient list page<br>
+│   ├── register.html            # User registration page<br>
+│   └── welcome.html             # Home/landing page<br>
+│<br>
+├── app.py                       # Main Flask application entry point<br>
+├── config.py                    # Application configuration settings<br>
+├── models.py                    # Database models<br>
+├── routes.py                    # Application route definitions<br>
+├── utils.py                     # Utility/helper functions<br>
+│<br>
+├── requirements.txt             # Python dependencies<br>
 └── readme.md                    # Project documentation
 
 
