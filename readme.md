@@ -29,7 +29,7 @@ A **web-based hospital appointment management system** for clinicians to manage 
 
 ## Project Structure
 
-BOOKINGAPPOINTMENT_NCD/
+BOOKINGAPPOINTMENT_NCD/ <br>
 │
 ├── __pycache__/                 # Compiled Python cache files
 │
