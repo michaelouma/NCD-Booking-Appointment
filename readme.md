@@ -31,7 +31,7 @@ A **web-based hospital appointment management system** for clinicians to manage 
 
 BOOKINGAPPOINTMENT_NCD/ <br>
 │<br>
-├── __pycache__/                 # Compiled Python cache files <br>
+├── __pycache__/      "   "           # Compiled Python cache files <br>
 │<br>
 ├── logs/<br>
 │   └── app.log                  # Application log file<br>
