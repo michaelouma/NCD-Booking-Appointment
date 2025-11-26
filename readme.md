@@ -32,11 +32,11 @@ A **web-based hospital appointment management system** for clinicians to manage 
 BOOKINGAPPOINTMENT_NCD/ <br>
 │<br>
 ├── __pycache__/                 # Compiled Python cache files <br>
-│
-├── logs/
-│   └── app.log                  # Application log file
-│
-├── ncd/                         # Virtual environment directory (venv)
+│<br>
+├── logs/<br>
+│   └── app.log                  # Application log file<br>
+│<br>
+├── ncd/                         # Virtual environment directory (venv)<br>
 │   ├── Include/
 │   ├── Lib/
 │   ├── Scripts/
