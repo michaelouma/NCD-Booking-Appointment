@@ -1,30 +1,61 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container mt-4" style="max-width: 500px;">
-    <h2 class="mb-4">Login</h2>
+<div class="container mt-5" style="max-width: 450px;">
 
-    <!-- Show flashed messages -->
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for msg in messages %}
-            <div class="alert alert-danger">{{ msg }}</div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
+    <div class="card shadow-sm p-4">
+        <h3 class="text-center mb-4">Login</h3>
 
-    <form method="POST">
-        <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="username" required>
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                <div class="alert alert-danger">{{ msg }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+
+            <!-- Username Field -->
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" class="form-control" name="username" required>
+                </div>
+            </div>
+
+            <!-- Password Field -->
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-lock"></i>
+                    </span>
+                    <input type="password" class="form-control" name="password" required>
+                </div>
+
+                <div class="text-end mt-1">
+                    <a href="#" class="small text-primary">Forgot password?</a>
+                </div>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+
+        </form>
+
+        <!-- Register Link -->
+        <div class="text-center mt-3">
+            <p class="small">
+                Don’t have an account?
+                <a href="{{ url_for('main.register') }}" class="text-primary">Register</a>
+            </p>
         </div>
 
-        <div class="mb-3">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password" required>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
+    </div>
 </div>
 {% endblock %}

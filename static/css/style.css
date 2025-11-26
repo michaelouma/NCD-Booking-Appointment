@@ -1,9 +1,85 @@
+/* ---------- GLOBAL STYLES ---------- */
 body {
     background-color: #f4f6f9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
+
+/* Smooth animations */
+* {
+    transition: 0.2s ease-in-out;
+}
+
+/* ---------- NAVBAR ---------- */
 .navbar {
     margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.table th, .table td {
+
+/* Links hover */
+.navbar .nav-link:hover {
+    color: #fff !important;
+    opacity: 0.85;
+}
+
+/* ---------- AUTH CARDS (Login, Register) ---------- */
+.card {
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.card h3 {
+    font-weight: 600;
+}
+
+/* Input groups */
+.input-group-text {
+    background: #e9ecef;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 4px rgba(13, 110, 253, 0.3);
+}
+
+/* Forgot password link */
+a.small {
+    font-size: 0.85rem;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-primary {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* ---------- TABLES ---------- */
+.table th, 
+.table td {
     vertical-align: middle;
 }
+
+.table tr:hover {
+    background-color: #f1f1f7;
+}
+
+/* ---------- FLASH MESSAGES ---------- */
+.alert {
+    border-radius: 8px;
+}
+
+/* ---------- FORMS ---------- */
+label {
+    font-weight: 500;
+}
+
+/* ---------- PAGE CONTAINERS ---------- */
+.container {
+    max-width: 95%;
+}
+
