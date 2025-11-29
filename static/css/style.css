@@ -1,51 +1,53 @@
 /* ---------- GLOBAL STYLES ---------- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #f4f6f9;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+
+    /* Background Image */
+    background-image: url('../images/img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Smooth animations */
-* {
-    transition: 0.2s ease-in-out;
+/* Ensure main content shows background */
+.content, .container {
+    background-color: transparent !important;
 }
 
-/* ---------- NAVBAR ---------- */
-.navbar {
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    height: 100vh;
+    background-color: rgba(13, 110, 253, 0.9); /* semi-transparent */
+    padding-top: 20px;
 }
 
-/* Links hover */
-.navbar .nav-link:hover {
-    color: #fff !important;
-    opacity: 0.85;
+.sidebar a {
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-/* ---------- AUTH CARDS (Login, Register) ---------- */
-.card {
-    border: none;
-    border-radius: 12px;
-    background: #ffffff;
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.card h3 {
-    font-weight: 600;
+.sidebar .active {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Input groups */
-.input-group-text {
-    background: #e9ecef;
-}
-
-.form-control:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 4px rgba(13, 110, 253, 0.3);
-}
-
-/* Forgot password link */
-a.small {
-    font-size: 0.85rem;
+/* ---------- TABLES ---------- */
+.table th, 
+.table td {
+    vertical-align: middle;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -58,28 +60,14 @@ a.small {
     opacity: 0.9;
 }
 
-/* ---------- TABLES ---------- */
-.table th, 
-.table td {
-    vertical-align: middle;
+/* ---------- CARDS ---------- */
+.card {
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.9);
 }
 
-.table tr:hover {
-    background-color: #f1f1f7;
+/* Smooth transitions */
+* {
+    transition: 0.2s ease-in-out;
 }
-
-/* ---------- FLASH MESSAGES ---------- */
-.alert {
-    border-radius: 8px;
-}
-
-/* ---------- FORMS ---------- */
-label {
-    font-weight: 500;
-}
-
-/* ---------- PAGE CONTAINERS ---------- */
-.container {
-    max-width: 95%;
-}
-
