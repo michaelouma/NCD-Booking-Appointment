@@ -15,11 +15,22 @@
         }
         .sidebar {
             height: 100vh;
-            background-color: #0d6efd;
             padding-top: 20px;
+
+            /* Removes the border/line */
+            border-right: none;
+
+            background: linear-gradient(
+             to right,
+            #0d6efd 0%,              /* left = strong blue */
+            #349cff 40%,             /* mid = soft blue */
+            rgba(52, 156, 255, 0.1) 70%,  /* fade softer */
+            rgba(0, 0, 0, 0) 100%     /* fully transparent at the right end */
+            );
         }
         .sidebar a {
-            color: white;
+            color: #0f2d53;          /* pure black */
+            font-weight: bold;       /* makes text bold */
             padding: 12px 20px;
             display: block;
             font-size: 16px;
@@ -51,7 +62,7 @@
         <!-- SIDEBAR -->
         <div class="col-md-2 sidebar">
 
-            <h4 class="text-white text-center mb-4">Hospital App</h4>
+            <h3 class="text-black text-center mb-4">Hospital App</h3>
 
             <a href="{{ url_for('main.dashboard') }}" class="{% if active_page=='dashboard' %}active{% endif %}">
                 <i class="bi bi-speedometer2"></i> Dashboard
