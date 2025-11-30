@@ -44,8 +44,10 @@ BOOKINGAPPOINTMENT_NCD/ <br>
 │<br>
 ├── static/<br>
 │   └── css/<br>
-│       └── style.css            # Custom stylesheet<br>
-│<br.
+│       └── style.css <br>
+└── images/<br>
+│       └── img.jpg <br>
+│<br>
 ├── templates/                   # HTML templates for Flask<br>
 │   ├── base.html                # Base layout shared by all pages<br>
 │   ├── dashboard.html           # Dashboard page<br>
