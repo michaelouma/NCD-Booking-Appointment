@@ -31,6 +31,15 @@
         .sidebar .active {
             background-color: rgba(255,255,255,0.3);
         }
+
+        /* MAIN CONTENT BACKGROUND */
+        .main-background {
+            background-image: url("{{ url_for('static', filename='images/img9.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+        }
     </style>
 </head>
 
@@ -70,9 +79,8 @@
         </div>
 
         <!-- MAIN CONTENT -->
-        <div class="col-md-10 p-4">
-
-            <!-- Flash Messages -->
+        <div class="col-md-10 p-4 main-background">
+                    <!-- Flash Messages -->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for msg in messages %}
